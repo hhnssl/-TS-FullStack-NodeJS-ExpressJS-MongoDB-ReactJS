@@ -9,7 +9,6 @@ export const typeDefs = gql`
 
   type Query {
     todos: [Todo] # 모든 투두리스트 가져오기
-    post(id: ID!): Todo # id로 한개 가져오기
   }
 
   type Mutation {
