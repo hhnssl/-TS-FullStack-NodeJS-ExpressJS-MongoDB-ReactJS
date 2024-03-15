@@ -54,4 +54,10 @@ https://www.apollographql.com/docs/apollo-server/data/resolvers
 https://idealstring.tistory.com/7
 
 
-### 성공하면 type-graphql 도입하기..
+# To do list
+```markdown
+[ ] client HTTP 요청 -> GraphQL 요청 변환
+[ ] 타입 지정
+[ ] strict 모드
+[ ] type-graphql 도입
+```

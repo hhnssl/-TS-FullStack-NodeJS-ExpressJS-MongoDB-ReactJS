@@ -5,6 +5,7 @@ export const typeDefs = gql`
     id: ID!
     name: String
     description: String
+    status: Boolean
   }
 
   type Query {
@@ -12,7 +13,7 @@ export const typeDefs = gql`
   }
 
   type Mutation {
-    createTodo(name: String, description: String): Todo
+    createTodo(name: String, description: String, status: Boolean): Todo
     updateTodo(
       id: ID!
       name: String

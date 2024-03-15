@@ -6,6 +6,7 @@ const todoSchema: Schema = new Schema(
   {
     name: { type: String, required: true },
     description: { type: String, required: true },
+    status: { type: Boolean, required: true },
   },
   { timestamps: true } // 스키마 생성 옵션: createdAt, updatedAt필드 자동 추가
 );

@@ -21,23 +21,23 @@ export const resolvers = {
   },
 
   Mutation: {
-    createTodo: async (_: any, { name, description }: ITodo) => {
+    createTodo: async (_: any, { name, description, status }: ITodo) => {
       try {
         console.log(whatApi);
-        const todo = new todoModel({ name, description });
+        const todo = new todoModel({ name, description, status });
         return await todo.save();
       } catch (err) {
         throw new Error(`데이터베이스에 새 todo를 추가하는 데에 실패함`);
       }
     },
-    updateTodo: async (_, { id, name, description }) => {
+    updateTodo: async (_, { id, name, description, status }) => {
       try {
         console.log(whatApi);
-        return await todoModel.findByIdAndUpdate(
-          id,
-          { name, description },
-          { new: true }
-        );
+        return await todoModel.findByIdAndUpdate(id, {
+          name,
+          description,
+          status,
+        });
       } catch (err) {
         throw new Error(`투두를 수정하는 것에 실패. id: ${id}`);
       }
