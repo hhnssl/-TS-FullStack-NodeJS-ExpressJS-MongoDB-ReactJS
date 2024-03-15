@@ -19,6 +19,7 @@ body {
 }
 
 .App > h1 {
+  font-size: 10px;
   text-align: center;
   margin: 1rem 0;
 }
