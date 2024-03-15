@@ -56,7 +56,8 @@ https://idealstring.tistory.com/7
 
 # To do list
 ```markdown
-[ ] client HTTP 요청 -> GraphQL 요청 변환
+[ ] Apollo Server에서 HTTP Method 사용하기
+[ ] Apollo Client 도입
 [ ] 타입 지정
 [ ] strict 모드
 [ ] type-graphql 도입
