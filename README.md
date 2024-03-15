@@ -62,3 +62,7 @@ https://idealstring.tistory.com/7
 [ ] strict 모드
 [ ] type-graphql 도입
 ```
+
+
+# 주의....
+- 소스트리에서 브랜치 삭제하지 말고 병합할 것...... 
