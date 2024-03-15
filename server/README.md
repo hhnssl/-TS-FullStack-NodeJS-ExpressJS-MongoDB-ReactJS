@@ -21,3 +21,10 @@ https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-
 https://mongoosejs.com/docs/typescript.html
 
 # 각 클라이언트, 서버에서 yarn start 하여 구동
+
+
+=============================================
+# GraphQL을 위한 아폴로서버 도입중
+https://www.apollographql.com/docs/apollo-server/data/resolvers
+
+# 성공하면 type-graphql 도입하기..

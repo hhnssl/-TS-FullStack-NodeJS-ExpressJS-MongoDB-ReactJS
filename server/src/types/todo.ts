@@ -4,7 +4,7 @@ import { Document } from "mongoose";
 export interface ITodo extends Document {
   name: string;
   description: string;
-  status: boolean;
+  status: boolean; // 컴플리트 상태
 }
 
 /* 
