@@ -71,3 +71,14 @@ https://idealstring.tistory.com/7
 # 참고 
 - Apollo Server & GraphQL
 https://codingmoonkwa.tistory.com/290
+
+
+
+
+
+
+# 자바스크립트
+1. promise를 쓰는 이유
+  1. 데이터를 가져온 것보다 데이터를 쓰려고 하는 게 더 빠를 경우 에러가 발생함
+    1. 데이터를 완전히 가져올 때 까지 기다리기 위해 promise 사용
+    1. 쉽게 말하자면 1번이 끝나야 2번이 실행될 수 있게끔 강제하는 것임
