@@ -56,9 +56,18 @@ https://idealstring.tistory.com/7
 
 # To do list
 ```markdown
-[ ] Apollo Server에서 HTTP Method 사용하기
-[ ] Apollo Client 도입
+[ ] FE - 라이브러리 없이 graphQL API 호출: fetch() 함수 이용
+[ ] FE - Apollo Client 도입
 [ ] 타입 지정
 [ ] strict 모드
 [ ] type-graphql 도입
 ```
+
+
+# 주의....
+- 소스트리에서 브랜치 삭제하지 말고 병합할 것...... 
+
+
+# 참고 
+- Apollo Server & GraphQL
+https://codingmoonkwa.tistory.com/290
