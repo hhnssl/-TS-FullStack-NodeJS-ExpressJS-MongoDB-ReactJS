@@ -2,4 +2,3 @@ server/package-lock.json
 server/node_modules
 server/dist
 server/yarn.lock
-server/dist
