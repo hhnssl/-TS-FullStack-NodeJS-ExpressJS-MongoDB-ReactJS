@@ -56,7 +56,7 @@ https://idealstring.tistory.com/7
 
 # To do list
 ```markdown
-[ ] FE - 라이브러리 없이 graphQL API 호출: fetch() 함수 이용
+[x] FE - 라이브러리 없이 graphQL API 호출: fetch() 함수 이용
 [ ] FE - Apollo Client 도입
 [ ] 타입 지정
 [ ] strict 모드
@@ -82,3 +82,12 @@ https://codingmoonkwa.tistory.com/290
   1. 데이터를 가져온 것보다 데이터를 쓰려고 하는 게 더 빠를 경우 에러가 발생함
     1. 데이터를 완전히 가져올 때 까지 기다리기 위해 promise 사용
     1. 쉽게 말하자면 1번이 끝나야 2번이 실행될 수 있게끔 강제하는 것임
+
+
+
+
+# JSON.parse(str): 문자열 -> 객체 변환
+
+# fetch() 함수를 이용하여 graph 요청/응답 받는 방법
+- query: 커밋 9ff2b1738d8c4749b29a87c624e9fe6fa26f87c0 참고
+- mutation: 커밋 e9ca37edd914270452bb1ee09005b4d16cfd06e1 참고
