@@ -2,32 +2,55 @@ import axios, { AxiosResponse } from "axios";
 
 const baseUrl: string = "http://localhost:4443";
 
-const query = `
-  query Todos {
-    todos {
-      id
-      name
-      description
-      status
-  }
-}
-`;
-
+/* GraphQL API */
+const GQL_URI = "http://localhost:4443/graphql";
 export const getTodosGql = async () => {
+  const query = `
+    query Todos {
+      todos {
+        id
+        name
+        description
+        status
+      }
+    }
+  `;
+
   try {
-    const response = await fetch("http://localhost:4443/graphql", {
+    const response = await fetch(GQL_URI, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query }),
     });
     const todos = await response.json();
-    console.log(todos);
     return todos;
   } catch (error) {
     throw error;
   }
 };
 
+export const addTodoGql = async (formData) => {
+  const mutation = `
+    mutation CreateTodo {
+        createTodo(name: "${formData.name}", description: "${formData.description}", status: false) {
+            id
+        }
+    }
+  `;
+  try {
+    const response = await fetch(GQL_URI, {
+      method: "post",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify({ query: mutation }),
+    });
+    const result = await response.json();
+    console.log(result);
+  } catch (error) {
+    throw error;
+  }
+};
+
+/* REST API */
 export const getTodos = async (): Promise<AxiosResponse<ApiDataType>> => {
   try {
     const todos: AxiosResponse<ApiDataType> = await axios.get(
